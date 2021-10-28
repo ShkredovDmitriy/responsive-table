@@ -1,0 +1,33 @@
+{
+  "editor.tabSize": 2,
+  "scss.validate": false,
+  "css.validate": false,
+  "less.validate": false,
+   "editor.codeActionsOnSave": {
+     "source.fixAll.stylelint": true,
+     "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.exclude": {
+    "**/.git": true,
+  },
+  "files.watcherExclude": {
+    "**/.git": true,
+    "**/dev/app/libs": true,
+    "**/node_modules": true,
+    "**/build": true
+  },
+  "scss.scannerExclude": [
+    "**/.git",
+    "**/node_modules",
+    "**/bower_components",
+    "**/build"
+  ],
+  "editor.fontLigatures": false,
+}

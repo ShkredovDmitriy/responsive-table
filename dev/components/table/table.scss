@@ -1,0 +1,104 @@
+.table {
+  display: table;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.table-header {
+  display: table-header-group;
+
+  .table-cell {
+    background-color: $color-red;
+    font-family: $font-main-bold;
+    font-size: 1.125rem;
+    color: $color-white;
+
+    &:first-child {
+      border-top-left-radius: 0.375rem;
+      border-bottom-left-radius: 0.375rem;
+    }
+
+    &:last-child {
+      border-top-right-radius: 0.375rem;
+      border-bottom-right-radius: 0.375rem;
+    }
+  }
+}
+
+.table-body {
+  display: table-row-group;
+
+  .table-cell {
+    border-bottom: 1px solid $color-grey;
+  }
+}
+
+.table-row {
+  display: table-row;
+}
+
+.table-cell {
+  display: table-cell;
+  padding-top: 1.25rem;
+  padding-right: 1rem;
+  padding-bottom: 1.25rem;
+  padding-left: 1rem;
+  font-family: $font-main-regular;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  vertical-align: middle;
+
+  &.rejected {
+    color: $color-red;
+  }
+}
+
+.guaranted-prize {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@include media-tablet {
+}
+
+@include media-mobile {
+  .table {
+    display: block;
+  }
+
+  .table-header {
+    display: none;
+  }
+
+  .table-body {
+    display: block;
+
+    .table-cell {
+      border-bottom: 0;
+    }
+  }
+
+  .table-row {
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $color-grey;
+  }
+
+  .table-cell {
+    display: flex;
+    padding: 0.25rem 0;
+    height: auto;
+    border-bottom: 0;
+    font-size: 0.9375rem;
+
+    &:before {
+      content: attr(data-label);
+      flex-shrink: 0;
+      display: block;
+      padding-right: 0.25rem;
+      width: 5.75rem;
+      color: $color-black;
+    }
+  }
+}

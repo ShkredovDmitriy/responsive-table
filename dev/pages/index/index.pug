@@ -1,0 +1,10 @@
+extends ../../templates/index
+
+include ../../components/table/table
+
+block variables
+    - var title = 'Responsive table'
+    - var pageClass = 'index-page'
+
+block content
+  +table({})
