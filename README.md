@@ -1,2 +1,2 @@
 # responsive table
-live demo 
+live demo https://shkredovdmitriy.github.io/responsive-table/
